@@ -11,17 +11,18 @@
     </div>
     <div class="logo-container">
       <router-link to="/">
-        <img src="@/assets/logo.svg" alt="Logo" class="logo" />
+        <img src="@/assets/logo.png" alt="Logo" class="logo" />
+        <span class="title">Rohlfing Wildlife</span>
       </router-link>
     </div>
     <div class="social-container">
-      <a href="https://www.instagram.com/your_instagram" target="_blank">
+      <a href="https://www.instagram.com/rohlfingwildlife" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.facebook.com/your_facebook" target="_blank">
+      <a href="https://www.facebook.com/rohlfingwildlife" target="_blank">
         <i class="fab fa-facebook"></i>
       </a>
-      <a href="https://www.etsy.com/shop/your_etsy_shop" target="_blank">
+      <a href="https://www.etsy.com/shop/rohlfingwildlife" target="_blank">
         <i class="fab fa-etsy"></i>
       </a>
     </div>
@@ -77,6 +78,40 @@
     a, img {
       height: 100%;
       max-height: 70px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 20px;
+
+      .title {
+        font-family: 'wildwest', sans-serif;
+        font-size: 64px;  
+        color: white;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        font-size: 2em;
+
+        /* Add some padding to create space for the underline */
+        padding-bottom: 0.2em;
+
+        &::after {
+          /* Create a pseudo-element to represent the underline */
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-image: linear-gradient(
+            to left,
+            transparent 0%,
+            #fff 80%
+          );
+          /* Adjust the curve of the underline */
+          border-radius: 10px;
+        }
+      }
 
       svg {
         fill: white;
