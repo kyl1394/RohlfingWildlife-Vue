@@ -4,9 +4,7 @@
       <router-view />
       <HeroSection
         class="hero-section"
-        :imageUrl="require('@/assets/hero-image.jpg')"
-        title="Welcome to my wildlife photography website"
-        description="Explore the beauty of nature through my lens"
+        :image-url="require('@/assets/hero-image.jpg')"
       />
       <div class="thumbnail-grid">
         <img src="@/assets/one.jpg" />
@@ -41,6 +39,10 @@ export default {
 
 .homepage {
   margin-top: -100px;
+}
+
+.hero-section {
+  max-height: 85vh;
 }
 
 .thumbnail-grid {
