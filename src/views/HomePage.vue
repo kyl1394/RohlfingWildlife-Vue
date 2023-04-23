@@ -4,7 +4,7 @@
       <router-view />
       <HeroSection
         class="hero-section"
-        :imageUrl="require('@/assets/hero-image.jpg')"
+        :image-url="require('@/assets/hero-image.jpg')"
       />
       <div class="thumbnail-grid">
         <img src="@/assets/one.jpg" />

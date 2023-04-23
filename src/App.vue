@@ -34,7 +34,6 @@ export default {
   justify-content: space-between;
 
   .nav-container {
-    padding: 0px 20px;
     height: 100px;
     z-index: 99999;
     background-color: rgba(0, 0, 0, 0.5);
